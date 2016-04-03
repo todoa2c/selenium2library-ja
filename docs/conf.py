@@ -43,7 +43,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'robotframework-selenium2library ドキュメント和訳'
+project = u'Selenium2Library ドキュメント和訳'
 copyright = u'2016, Yasushi Masuda <whosaysni@gmail.com>'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -196,7 +196,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'robotframework-selenium2library.tex', u'robotframework-selenium2library ドキュメント和訳 Documentation',
+  ('index', 'robotframework-selenium2library.tex', u'Selenium2Library ドキュメント和訳',
    u'Yasushi Masuda \\textless{}whosaysni@gmail.com\\textgreater{}', 'manual'),
 ]
 
@@ -226,7 +226,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'robotframework-selenium2library', u'robotframework-selenium2library ドキュメント和訳 Documentation',
+    ('index', 'robotframework-selenium2library', u'Selenium2Library ドキュメント和訳',
      [u'Yasushi Masuda <whosaysni@gmail.com>'], 1)
 ]
 
@@ -240,7 +240,7 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'robotframework-selenium2library', u'robotframework-selenium2library ドキュメント和訳 Documentation',
+  ('index', 'robotframework-selenium2library', u'Selenium2Library ドキュメント和訳',
    u'Yasushi Masuda <whosaysni@gmail.com>', 'robotframework-selenium2library', 'One line description of project.',
    'Miscellaneous'),
 ]
