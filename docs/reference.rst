@@ -189,6 +189,190 @@ Library Selenium2Library
 組み込みキーワード
 ========================
 
+
+.. table::
+
+  ============================================= ===================================================================
+  キーワード                                    説明
+  ============================================= ===================================================================
+  `Create Webdriver`_                           WebDriverインスタンスを生成する
+  `Open Browser`_                               新しくブラウザウィンドウを開く
+  `Go To`_                                      URLを指定する
+  `Go Back`_                                    戻るボタンを押す
+  `Reload Page`_                                ページをリロードする
+  `Select Window`_                              ウィンドウを切り替える
+  `Set Window Position`_                        ウィンドウ位置を変更する
+  `Set Window Size`_                            ウィンドウサイズを変更する
+  `Maximize Browser Window`_                    ブラウザウィンドウを最大化する
+  `Select Frame`_                               フレームを切り替える
+  `Switch Browser`_                             ブラウザを切り替える
+  `Unselect Frame`_                             フレームの選択を解除する
+  `List Windows`_                               ウィンドウのリストを取り出す
+  `Close Window`_                               ポップアップウィンドウを閉じる
+  `Close Browser`_                              現在のブラウザを閉じる
+  `Close All Browsers`_                         全てのブラウザを閉じる
+  `Get Window Identifiers`_                     開いている全ウィンドウの識別子を調べる
+  `Get Window Names`_                           開いている全ウィンドウのウィンドウ名を調べる
+  `Get Window Position`_                        ウィンドウの位置を調べる
+  `Get Window Size`_                            ウィンドウのサイズを調べる
+  `Get Window Titles`_                          ウィンドウのタイトルを調べる
+  `Get Location`_                               現在のURLを調べる
+  `Location Should Be`_                         URLが指定通りか確認する
+  `Location Should Contain`_                    URLに指定の値が含まれるか確認する
+  `Get Source`_                                 ページのソースを調べる
+  `Get Title`_                                  ページのタイトルを調べる
+  `Title Should Be`_                            タイトルが指定通りか確認する
+  `Get Text`_                                   エレメントのテキストを調べる
+  `Get Value`_                                  エレメントのvalueを調べる
+  `Get Webelement`_                             エレメントを WebElement として取り出す
+  `Get Webelements`_                            ページの全エレメントを WebElement として取り出す
+  `Get Element Attribute`_                      エレメントの属性を調べる
+  `Get Vertical Position`_                      エレメントの垂直位置を調べる
+  `Get Horizontal Position`_                    エレメントの水平位置を調べる
+  `Get All Links`_                              ページ中の全てのリンクを調べる
+
+  `Set Screenshot Directory`_                   スクリーンショットの出力先を変更する
+  `Capture Page Screenshot`_                    ページのスクリーンショットを取る
+
+  `Add Cookie`_                                 クッキーを追加する
+  `Get Cookie Value`_                           クッキーの値を調べる
+  `Get Cookies`_                                クッキーを全て取り出す
+  `Delete Cookie`_                              特定のクッキーを削除する
+  `Delete All Cookies`_                         全てのクッキーを削除する
+
+  `Page Should Contain`_                        ページが指定文字列を含むか確認する
+  `Page Should Contain Button`_                 ページに指定のボタンがあるか確認する
+  `Page Should Contain Checkbox`_               ページに指定のチェックボックスがあるか確認する
+  `Page Should Contain Element`_                ページに指定のエレメントがあるか確認する
+  `Page Should Contain Image`_                  ページに指定の画像があるか確認する
+  `Page Should Contain Link`_                   ページに指定のリンクがあるか確認する
+  `Page Should Contain List`_                   ページに指定のリストがあるか確認する
+  `Page Should Contain Radio Button`_           ページに指定のラジオボタンがあるか確認する
+  `Page Should Contain Textfield`_              ページに指定のテキスト入力があるか確認する
+  `Page Should Not Contain`_                    ページに指定の文字列がないことを確認する
+  `Page Should Not Contain Button`_             ページに指定のボタンがあるか確認する
+  `Page Should Not Contain Checkbox`_           ページに指定のチェックボックスがあるか確認する
+  `Page Should Not Contain Element`_            ページに指定のエレメントがあるか確認する
+  `Page Should Not Contain Image`_              ページに指定の画像があるか確認する
+  `Page Should Not Contain Link`_               ページに指定のリンクがあるか確認する
+  `Page Should Not Contain List`_               ページに指定のリストがあるか確認する
+  `Page Should Not Contain Radio Button`_       ページに指定のラジオボタンがないことを確認する
+  `Page Should Not Contain Textfield`_          指定のテキスト入力がないことを確認する
+  `Frame Should Contain`_                       フレームに指定文字列があるか確認する
+  `Current Frame Contains`_                     現在のフレームに指定文字列があるか確認する
+  `Current Frame Should Not Contain`_           現在のフレームが指定文字列を含まないことを確認する
+  `Get Matching Xpath Count`_                   指定のXPathにマッチした回数を調べる
+  `Xpath Should Match X Times`_                 XPathにマッチするエレメントの個数が指定通りか確認する
+  `Locator Should Match X Times`_               エレメントが指定個数入っているか書くにする
+
+  `Element Should Be Disabled`_                 エレメントが無効か確認する
+  `Element Should Be Enabled`_                  エレメントが有効か確認する
+  `Element Should Be Visible`_                  エレメントが可視か確認する
+  `Element Should Contain`_                     エレメントのテキストに指定文字列があるか確認する
+  `Element Should Not Be Visible`_              エレメントが不可視であることを確認する
+  `Element Should Not Contain`_                 エレメントのテキストが指定文字列が含まないことを確認する
+  `Element Text Should Be`_                     エレメントのテキストが指定文字列と一致するか確認する
+
+  `Get Table Cell`_                             テーブルの指定のセルの中身を調べる
+  `Table Cell Should Contain`_                  テーブルのセルが指定の文字列を含むか確認する
+  `Table Column Should Contain`_                テーブルのカラムが指定の文字列を含むか確認する
+  `Table Footer Should Contain`_                テーブルのフッタが指定の文字列を含むか確認する
+  `Table Header Should Contain`_                テーブルのヘッダが指定の文字列を含むか確認する
+  `Table Row Should Contain`_                   テーブルの行が指定の文字列を含むか確認する
+  `Table Should Contain`_                       テーブルが指定の文字列を含むか確認する
+
+  `Click Button`_                               ボタンをクリックする
+  `Click Element`_                              任意のエレメントをクリックする
+  `Click Element At Coordinates`_               エレメントの指定の場所をクリックする
+  `Click Image`_                                画像をクリックする
+  `Click Link`_                                 リンクをクリックする
+  `Focus`_                                      ウィンドウやフレームをフォーカスする
+  `Mouse Down`_                                 エレメント上で左ボタンを押した状態にする
+  `Mouse Down On Image`_                        画像上で左ボタンを押した状態にする
+  `Mouse Down On Link`_                         リンク上で左ボタンを押した状態にする
+  `Mouse Out`_                                  エレメントからマウスカーソルを外す
+  `Mouse Over`_                                 エレメントにマウスカーソルを重ねる
+  `Mouse Up`_                                   押していた左ボタンをリリースする
+  `Double Click Element`_                       任意のエレメントをダブルクリックする
+  `Drag And Drop`_                              エレメントを別のエレメントにドラッグ＆ドロップする
+  `Drag And Drop By Offset`_                    エレメントを指定の場所にドラッグ＆ドロップする
+  `Press Key`_                                  キーを押す
+  `Open Context Menu`_                          コンテキストメニューを開く
+
+  `Alert Should Be Present`_                    アラートが表示されたか確認する
+  `Choose Ok On Next Confirmation`_             次に表示されるダイアログでOKを押す
+  `Choose Cancel On Next Confirmation`_         次に表示されるダイアログでキャンセルを押す
+  `Confirm Action`_                             ダイアログのメッセージを取得して閉じる
+  `Dismiss Alert`_                              アラートダイアログを閉じて押したボタンを返す
+  `Get Alert Message`_                          アラートダイアログのメッセージを調べる
+  `Input Text Into Prompt`_                     アラートダイアログにテキストを入力する
+
+  `Input Text`_                                 テキスト入力に入力する
+  `Input Password`_                             ログに記録しないでパスワードを入力する
+  `Textarea Should Contain`_                    テキストエリアのテキストが指定の文字列を含むか確認する
+  `Textarea Value Should Be`_                   テキストエリアの値が指定通りか確認する
+  `Textfield Should Contain`_                   テキストフィールドのテキストが指定の文字列を含むか確認する
+  `Textfield Value Should Be`_                  テキストフィールドのvalueが指定通りか確認する
+  `Clear Element Text`_                         テキスト入力の値をクリアする
+  `Select Radio Button`_                        ラジオボタンを選択する
+  `Radio Button Should Be Set To`_              指定のラジオボタンが選ばれていることを確認する
+  `Radio Button Should Not Be Selected`_        指定のラジオボタンが選ばれていないことを確認する
+  `Checkbox Should Be Selected`_                チェックボックスが選択されているか確認する
+  `Checkbox Should Not Be Selected`_            チェックボックスが非選択であるか確認する
+  `Select All From List`_                       selectの全項目を選択する
+  `Select From List`_                           selectの項目を選択する
+  `Select From List By Index`_                  selectの項目を選択する
+  `Select From List By Label`_                  selectの項目を選択する
+  `Select From List By Value`_                  selectの項目を選択する
+  `Unselect From List`_                         リストから指定の要素の選択を外す
+  `Unselect From List By Index`_                リストから指定の要素の選択を外す
+  `Unselect From List By Label`_                リストから指定の要素の選択を外す
+  `Unselect From List By Value`_                リストから指定の要素の選択を外す
+  `Get List Items`_                             selectの全選択肢を取り出す
+  `Get Selected List Label`_                    selectの指定の選択肢のラベルを調べる
+  `Get Selected List Labels`_                   selectの全てのラベルを取り出す
+  `Get Selected List Value`_                    selectの指定の選択肢のvalueを調べる
+  `Get Selected List Values`_                   selectのすべての選択肢のvalueを調べる
+  `List Selection Should Be`_                   selectの選択内容が指定通りか確認する
+  `List Should Have No Selections`_             selectが非選択状態であることを確認する
+  `Choose File`_                                ファイルダイアログにファイルを指定する
+  `Select Checkbox`_                            チェックボックスを選択する
+  `Unselect Checkbox`_                          チェックボックスの選択を解除する
+  `Submit Form`_                                フォームを submit する
+
+  `Log Location`_                               現在のURLをログに記録する
+  `Log Source`_                                 ページのソースをログに記録する
+  `Log Title`_                                  ページのタイトルをログに記録する
+
+  `Execute Async Javascript`_                   非同期でJavaScriptのコードを実行する
+  `Execute Javascript`_                         JavaScriptのコードを実行する
+  `Simulate`_                                   イベント発生をシミュレートする
+  `Assign Id To Element`_                       エレメントに一時的な id を割り当てる
+
+  `Wait For Condition`_                         指定の条件式が満たされるまで待機する
+  `Wait Until Element Contains`_                エレメント内に文字列が現れるまで待機する
+  `Wait Until Element Does Not Contain`_        文字列がエレメントからなくなるまで待機する
+  `Wait Until Element Is Enabled`_              エレメントが有効状態になるまで待機する
+  `Wait Until Element Is Not Visible`_          エレメントが不可視になるまで待機する
+  `Wait Until Element Is Visible`_              エレメントが可視になるまで待機する
+  `Wait Until Page Contains`_                   文字列がページに現れるまで待機する
+  `Wait Until Page Contains Element`_           エレメントがページに現れるまで待機する
+  `Wait Until Page Does Not Contain`_           文字列がページからなくなるまで待機する
+  `Wait Until Page Does Not Contain Element`_   エレメントがページからなくなるまで待機する
+  `Get Selenium Implicit Wait`_                 Selenium の暗黙の待機時間を調べる
+  `Get Selenium Speed`_                         Selenium の実行ウェイトを調べる
+  `Get Selenium Timeout`_                       Selenium のタイムアウトを調べる
+  `Set Browser Implicit Wait`_                  ブラウザ単位で暗黙待機時間を変更する
+  `Set Selenium Implicit Wait`_                 Selenium の暗黙待機時間を変更する
+  `Set Selenium Speed`_                         Selenium の実行ウェイトを変更する
+  `Set Selenium Timeout`_                       Selenium のタイムアウトを変更する
+
+  `Add Location Strategy`_                      自作のエレメント特定方法を追加する
+  `Remove Location Strategy`_                   以前登録したエレメントの探索ストラテジを削除する
+  `Register Keyword To Run On Failure`_         失敗したときに実行するキーワードを指定する
+  ============================================= ===================================================================      
+   
+
 ``Add Cookie``
 ---------------
 
@@ -2129,3 +2313,4 @@ xpath を指定するときに、 ``xpath=`` を含めてはなりません。
 
 
 .. _`Wait Until Keyword Succeeds`: http://robotframework.org/robotframework/latest/libraries/BuiltIn.html#Wait%20Until%20Keyword%20Succeeds
+
