@@ -373,7 +373,7 @@ Library Selenium2Library
   ============================================= ===================================================================      
    
 
-``Add Cookie``
+Add Cookie
 ---------------
 
 :Arguments: name, value, path=None, domain=None, secure=None, expiry=None
@@ -382,7 +382,7 @@ Library Selenium2Library
 ``path``, ``domain``, ``secure`` は省略可です。
 
 
-``Add Location Strategy``
+Add Location Strategy
 --------------------------
 
 :Arguments: strategy_name, strategy_keyword, persist=False
@@ -412,7 +412,7 @@ persist を空文字列以外に設定しておくと、テスト全体が終了
 カスタムのロケーションストラテジを削除する方法は `Remove Location Strategy`_ を参照してください。
 
 
-``Alert Should Be Present``
+Alert Should Be Present
 ----------------------------
 
 :Arguments: text=
@@ -423,7 +423,7 @@ persist を空文字列以外に設定しておくと、テスト全体が終了
 テスト中でアラートダイアログが表示されると、このキーワードか `Get Alert Message`_ でアラートダイアログを消さないかぎり、後続のキーワードは失敗するので注意してください。
 
 
-``Assign Id To Element``
+Assign Id To Element
 -------------------------
 
 :Arguments: locator, id
@@ -441,7 +441,7 @@ XPathでロケータを表現するのが難解だったり遅い場合に便利
   Page Should Contain Element  my_id
 
 
-``Capture Page Screenshot``
+Capture Page Screenshot
 ----------------------------
 
 :Arguments: filename=None
@@ -453,7 +453,7 @@ XPathでロケータを表現するのが難解だったり遅い場合に便利
 スクリーンショットの撮り方を変えるために、css を使えます。通常、ページレイアウトに何か問題があると、背景がはみ出して表示されることがあるので、背景色を変更します。
 
 
-``Checkbox Should Be Selected``
+Checkbox Should Be Selected
 --------------------------------
 
 :Arguments: locator
@@ -463,7 +463,7 @@ XPathでロケータを表現するのが難解だったり遅い場合に便利
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Checkbox Should Not Be Selected``
+Checkbox Should Not Be Selected
 -------------------------------------
 
 :Arguments: locator
@@ -473,13 +473,13 @@ XPathでロケータを表現するのが難解だったり遅い場合に便利
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Choose Cancel On Next Confirmation``
+Choose Cancel On Next Confirmation
 ---------------------------------------
 
 ダイアログが表示されたときにキャンセルボタンを選ぶように指定します。
 
 
-``Choose File``
+Choose File
 ----------------
 
 :Arguments: locator, file_path
@@ -495,7 +495,7 @@ XPathでロケータを表現するのが難解だったり遅い場合に便利
   Choose File  my_upload_field  /home/user/files/trades.csv
 
 
-``Choose Ok On Next Confirmation``
+Choose Ok On Next Confirmation
 -----------------------------------
 
 ``Choose Cancel On Next Confirmation`` の効果を打ち消します。
@@ -507,7 +507,7 @@ Selenium は window.confirm() の動作をオーバライドすることで、�
 確認ダイアログが出る度に、 ``Get Alert Message`` などでダイアログを処理しないと、それ以降の操作は全て失敗するので注意してください。
 
 
-``Clear Element Text``
+Clear Element Text
 -----------------------
 
 :Arguments: locator
@@ -516,7 +516,7 @@ Selenium は window.confirm() の動作をオーバライドすることで、�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Click Button``
+Click Button
 -----------------
 
 :Arguments: locator
@@ -526,7 +526,7 @@ Selenium は window.confirm() の動作をオーバライドすることで、�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Click Element``
+Click Element
 ------------------
 
 :Arguments: locator
@@ -536,7 +536,7 @@ Selenium は window.confirm() の動作をオーバライドすることで、�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Click Element At Coordinates``
+Click Element At Coordinates
 ---------------------------------
 
 :Arguments: locator, xoffset, yoffset
@@ -546,7 +546,7 @@ Selenium は window.confirm() の動作をオーバライドすることで、�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Click Image``
+Click Image
 ----------------
 
 :Arguments: locator
@@ -556,7 +556,7 @@ Selenium は window.confirm() の動作をオーバライドすることで、�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Click Link``
+Click Link
 ---------------
 
 :Arguments: locator
@@ -566,7 +566,7 @@ Selenium は window.confirm() の動作をオーバライドすることで、�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Close All Browsers``
+Close All Browsers
 -----------------------
 
 開いている全てのブラウザを閉じ、ブラウザキャッシュをリセットします。
@@ -576,13 +576,13 @@ Selenium は window.confirm() の動作をオーバライドすることで、�
 テストやスイートの後始末 (teardown) の際には、このキーワードで全てのブラウザを閉じねばなりません。
 
 
-``Close Browser``
+Close Browser
 ------------------
 
 現在のブラウザを閉じます。
 
 
-``Close Window``
+Close Window
 -----------------
 
 :Arguments: 
@@ -590,7 +590,7 @@ Selenium は window.confirm() の動作をオーバライドすることで、�
 現在開いているポップアップウィンドウを閉じます。
 
 
-``Confirm Action``
+Confirm Action
 -------------------
 
 現在表示されている確認ダイアログを閉じ、表示されていたメッセージを返します。
@@ -616,7 +616,7 @@ Selenium は window.confirm() の動作をオーバライドすることで、�
   Confirm Action 
 
 
-``Create Webdriver``
+Create Webdriver
 ---------------------
 
 :Arguments: driver_name, alias=None, kwargs={}, \**init_kwargs
@@ -652,7 +652,7 @@ WebDriver のインスタンスを生成します。
   Create Webdriver  Ie  kwargs=${kwargs}
 
 
-``Current Frame Contains``
+Current Frame Contains
 ---------------------------
 
 :Arguments: text, loglevel=INFO
@@ -661,7 +661,7 @@ WebDriver のインスタンスを生成します。
 ``loglevel`` の説明は `Page Should Contain`_ を参照してください。
 
 
-``Current Frame Should Not Contain``
+Current Frame Should Not Contain
 -------------------------------------
 
 :Arguments: text, loglevel=INFO
@@ -670,13 +670,13 @@ WebDriver のインスタンスを生成します。
 ``loglevel`` の説明は `Page Should Contain`_ を参照してください。
 
 
-``Delete All Cookies``
+Delete All Cookies
 -----------------------
 
 クッキーを全て除去します。
 
 
-``Delete Cookie``
+Delete Cookie
 ------------------
 
 :Arguments: name
@@ -685,7 +685,7 @@ WebDriver のインスタンスを生成します。
 指定のクッキーが見つからなくても何もしません。
 
 
-``Dismiss Alert``
+Dismiss Alert
 ------------------
 
 :Arguments: accept=True
@@ -695,7 +695,7 @@ WebDriver のインスタンスを生成します。
 このキーワードが失敗すると、それ以降のテストは `Get Alert Message`_ などでアラートダイアログを閉じないかぎり失敗します。
 
 
-``Double Click Element``
+Double Click Element
 -------------------------
 
 :Arguments: locator
@@ -704,7 +704,7 @@ WebDriver のインスタンスを生成します。
 キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Drag And Drop``
+Drag And Drop
 ------------------
 
 :Arguments: source, target
@@ -719,7 +719,7 @@ WebDriver のインスタンスを生成します。
   Drag And Drop  elem1  elem2
 
 
-``Drag And Drop By Offset``
+Drag And Drop By Offset
 ----------------------------
 
 :Arguments: source, xoffset, yoffset
@@ -735,7 +735,7 @@ WebDriver のインスタンスを生成します。
   Drag And Drop By Offset  myElem  50  -35
 
 
-``Element Should Be Disabled``
+Element Should Be Disabled
 -------------------------------
 
 :Arguments: locator
@@ -745,7 +745,7 @@ WebDriver のインスタンスを生成します。
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Element Should Be Enabled``
+Element Should Be Enabled
 ------------------------------
 
 :Arguments: locator
@@ -755,7 +755,7 @@ WebDriver のインスタンスを生成します。
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Element Should Be Visible``
+Element Should Be Visible
 ------------------------------
 
 :Arguments: locator, message=
@@ -768,7 +768,7 @@ WebDriver のインスタンスを生成します。
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Element Should Contain``
+Element Should Contain
 ---------------------------
 
 :Arguments: locator, expected, message=
@@ -781,7 +781,7 @@ WebDriver のインスタンスを生成します。
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Element Should Not Be Visible``
+Element Should Not Be Visible
 ----------------------------------
 
 :Arguments: locator, message=
@@ -793,7 +793,7 @@ WebDriver のインスタンスを生成します。
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Element Should Not Contain``
+Element Should Not Contain
 -------------------------------
 
 :Arguments: locator, expected, message=
@@ -803,7 +803,7 @@ WebDriver のインスタンスを生成します。
 キー属性は ``id`` と ``name`` です。 `Element Should Contain`_ も参照してください。
 
 
-``Element Text Should Be``
+Element Text Should Be
 ---------------------------
 
 :Arguments: locator, expected, message=
@@ -814,7 +814,7 @@ WebDriver のインスタンスを生成します。
 キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Execute Async Javascript``
+Execute Async Javascript
 -----------------------------
 
 :Arguments: \*code
@@ -844,7 +844,7 @@ JavaScript のコードは、現在選択されているフレームやウィン
   Should Be Equal  ${retval}  text
 
 
-``Execute Javascript``
+Execute Javascript
 -----------------------
 
 :Arguments: \*code
@@ -866,7 +866,7 @@ JavaScript のコードは、現在選択されているフレームやウィン
   Should Be Equal  ${sum}  ${2}
 
 
-``Focus``
+Focus
 ----------
 
 :Arguments: locator
@@ -874,7 +874,7 @@ JavaScript のコードは、現在選択されているフレームやウィン
 ``locator`` で指定したエレメントをフォーカスします。
 
 
-``Frame Should Contain``
+Frame Should Contain
 -------------------------
 
 :Arguments: locator, text, loglevel=INFO
@@ -885,7 +885,7 @@ JavaScript のコードは、現在選択されているフレームやウィン
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Get Alert Message``
+Get Alert Message
 ----------------------
 
 :Arguments: dismiss=True
@@ -896,14 +896,14 @@ JavaScript のコードは、現在選択されているフレームやウィン
 アラートが出ている時、このキーワードなどでダイアログを閉じないと、以降のテストが失敗になるので注意してください。
 
 
-``Get All Links``
+Get All Links
 ------------------
 
 現在のページに表示されている全てのリンクの id の入ったリストを返します。
 リンクタグに id が入っていなければ、リスト中には空文字列が入ります。
 
 
-``Get Cookie Value``
+Get Cookie Value
 ---------------------
 
 :Arguments: name
@@ -911,13 +911,13 @@ JavaScript のコードは、現在選択されているフレームやウィン
 クッキー名 ``name`` のクッキーの値を返します。
 該当するクッキーがなければ、このキーワードは失敗します。
 
-``Get Cookies``
+Get Cookies
 ----------------
 
 現在のページの全てのクッキーを返します。
 
 
-``Get Element Attribute``
+Get Element Attribute
 --------------------------
 
 :Arguments: attribute_locator
@@ -926,7 +926,7 @@ JavaScript のコードは、現在選択されているフレームやウィン
 ``attribute_locator`` の形式は、 ``element_id@class`` のように、ロケータの後に ``@`` と属性名をつけたものです。
 
 
-``Get Horizontal Position``
+Get Horizontal Position
 ----------------------------
 
 :Arguments: locator
@@ -938,7 +938,7 @@ JavaScript のコードは、現在選択されているフレームやウィン
 .. seealso:: `Get Vertical Position`_
 
 
-``Get List Items``
+Get List Items
 -------------------
 
 :Arguments: locator
@@ -949,7 +949,7 @@ JavaScript のコードは、現在選択されているフレームやウィン
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Get Location``
+Get Location
 -----------------
 
 :Arguments: 
@@ -957,7 +957,7 @@ JavaScript のコードは、現在選択されているフレームやウィン
 現在の URL を返します。
 
 
-``Get Matching Xpath Count``
+Get Matching Xpath Count
 -----------------------------
 
 :Arguments: xpath
@@ -975,7 +975,7 @@ XPath 前提なので、ロケータに ``xpath=`` プレフィクスをつけ�
 マッチしたエレメントの数を検証したければ、 `Xpath Should Match X Times`_ を使ってください。
 
 
-``Get Selected List Label``
+Get Selected List Label
 ----------------------------
 
 :Arguments: locator
@@ -985,7 +985,7 @@ XPath 前提なので、ロケータに ``xpath=`` プレフィクスをつけ�
 キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Get Selected List Labels``
+Get Selected List Labels
 -----------------------------
 
 :Arguments: locator
@@ -995,7 +995,7 @@ XPath 前提なので、ロケータに ``xpath=`` プレフィクスをつけ�
 リストとコンボボックスのどちらにも使えます。キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Get Selected List Value``
+Get Selected List Value
 ----------------------------
 
 :Arguments: locator
@@ -1005,7 +1005,7 @@ XPath 前提なので、ロケータに ``xpath=`` プレフィクスをつけ�
 リストとコンボボックスのどちらにも使えます。キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Get Selected List Values``
+Get Selected List Values
 -----------------------------
 
 :Arguments: locator
@@ -1015,34 +1015,34 @@ XPath 前提なので、ロケータに ``xpath=`` プレフィクスをつけ�
 リストとコンボボックスのどちらにも使えます。キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Get Selenium Implicit Wait``
+Get Selenium Implicit Wait
 -------------------------------
 
 Selenium が待機する時間の設定値を秒で返します。
 値の意味は `Set Selenium Implicit Wait`_ を参照してください。
 
 
-``Get Selenium Speed``
+Get Selenium Speed
 -----------------------
 
 Selenium にコマンドを出したあとに待機する時間を返します。
 値の意味は `Set Selenium Speed`_ を参照してください。
 
 
-``Get Selenium Timeout``
+Get Selenium Timeout
 -------------------------
 
 様々なキーワードで使われているタイムアウトの長さを秒で返します。
 値の意味は `Set Selenium Timeout`_ を参照してください。
 
 
-``Get Source``
+Get Source
 ---------------
 
 現在のページやフレームの HTML ソースを返します。
 
 
-``Get Table Cell``
+Get Table Cell
 -------------------
 
 :Arguments: table_locator, row, column, loglevel=INFO
@@ -1054,7 +1054,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 テーブルの指定方法は  `テーブル、行、列などの指定方法 <locating table>`_ を参照してください。
 
 
-``Get Text``
+Get Text
 -------------
 
 :Arguments: locator
@@ -1063,13 +1063,13 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Get Title``
+Get Title
 --------------
 
 現在のページのタイトルを返します。
 
 
-``Get Value``
+Get Value
 --------------
 
 :Arguments: locator
@@ -1078,7 +1078,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Get Vertical Position``
+Get Vertical Position
 --------------------------
 
 :Arguments: locator
@@ -1090,7 +1090,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 .. seealso:: `Get Horizontal Position`_
 
 
-``Get Webelement``
+Get Webelement
 -------------------
 
 :Arguments: locator
@@ -1099,7 +1099,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Get Webelements``
+Get Webelements
 --------------------
 
 :Arguments: locator
@@ -1108,19 +1108,19 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Get Window Identifiers``
+Get Window Identifiers
 ---------------------------
 
 ブラウザが把握している全てのウィンドウの id 属性をログに出力して返します。
 
 
-``Get Window Names``
+Get Window Names
 ---------------------
 
 ブラウザが把握している全てのウィンドウの name 属性をログに出力して返します。
 
 
-``Get Window Position``
+Get Window Position
 ------------------------
 
 現在のウィンドウの位置を x, y の順で返します。
@@ -1132,7 +1132,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
   ${x}  ${y}=  Get Window Position
 
 
-``Get Window Size``
+Get Window Size
 --------------------
 
 現在のウィンドウサイズを width, height の順で返します。
@@ -1144,19 +1144,19 @@ Selenium にコマンドを出したあとに待機する時間を返します�
   ${width}  ${height}=  Get Window Size
 
 
-``Get Window Titles``
+Get Window Titles
 ----------------------
 
 ブラウザが把握している全てのウィンドウのタイトルをログに出力して返します。
   
 
-``Go Back``
+Go Back
 ------------
 
 ブラウザの「戻る」ボタンをユーザがクリックした時の動作をシミュレートします。
 
 
-``Go To``
+Go To
 ----------
 
 :Arguments: url
@@ -1164,7 +1164,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 アクティブなブラウザインスタンスを使って、指定の URL に移動します。
 
 
-``Input Password``
+Input Password
 -------------------
 
 :Arguments: locator, text
@@ -1174,7 +1174,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Input Text``
+Input Text
 ---------------
 
 :Arguments: locator, text
@@ -1183,7 +1183,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Input Text Into Prompt``
+Input Text Into Prompt
 ---------------------------
 
 :Arguments: text
@@ -1191,7 +1191,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 アラートボックスに ``text`` をタイプ入力します。
 
 
-``List Selection Should Be``
+List Selection Should Be
 -----------------------------
 
 :Arguments: locator, \*items
@@ -1201,7 +1201,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 リストとコンボボックスのどちらにも使えます。キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``List Should Have No Selections``
+List Should Have No Selections
 -----------------------------------
 
 :Arguments: locator
@@ -1210,13 +1210,13 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 リストとコンボボックスのどちらにも使えます。キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``List Windows``
+List Windows
 -----------------
 
 現在の全てのウィンドウハンドルをリストで返します。
 
 
-``Location Should Be``
+Location Should Be
 -----------------------
 
 :Arguments: url
@@ -1224,7 +1224,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 現在の URL が ``url`` と完全一致することを検証します。
 
 
-``Location Should Contain``
+Location Should Contain
 ----------------------------
 
 :Arguments: expected
@@ -1232,7 +1232,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 現在の URL に ``expected`` が含まれているか検証します。
 
 
-``Locator Should Match X Times``
+Locator Should Match X Times
 ---------------------------------
 
 :Arguments: locator, expected_locator_count, message=, loglevel=INFO
@@ -1242,13 +1242,13 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 ``message`` と ``loglevel`` の説明は `Page Should Contain Element`_ を参照してください。
 
 
-``Log Location``
+Log Location
 -----------------
 
 現在の URL をログに記録して返します。
 
 
-``Log Source``
+Log Source
 ---------------
 
 :Arguments: loglevel=INFO
@@ -1257,19 +1257,19 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 ``loglevel`` はログの記録に使うログレベルで、 ``WARN``, ``INFO`` (デフォルト), ``DEBUG``, ``NONE`` (ログに記録しない) のいずれかです。
 
 
-``Log Title``
+Log Title
 --------------
 
 現在のページのタイトルをログに記録して返します。
 
 
-``Maximize Browser Window``
+Maximize Browser Window
 ----------------------------
 
 現在のブラウザウィンドウを最大化します。
 
 
-``Mouse Down``
+Mouse Down
 ---------------
 
 :Arguments: locator
@@ -1281,7 +1281,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 特定エレメント向けの `Mouse Down On Image`_ や `Mouse Down On Link`_ も参照してください。
 
 
-``Mouse Down On Image``
+Mouse Down On Image
 ------------------------
 
 :Arguments: locator
@@ -1291,7 +1291,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Mouse Down On Link``
+Mouse Down On Link
 -----------------------
 
 :Arguments: locator
@@ -1301,7 +1301,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Mouse Out``
+Mouse Out
 --------------
 
 :Arguments: locator
@@ -1311,7 +1311,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Mouse Over``
+Mouse Over
 ---------------
 
 :Arguments: locator
@@ -1321,7 +1321,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Mouse Up``
+Mouse Up
 -------------
 
 :Arguments: locator
@@ -1331,7 +1331,7 @@ Selenium にコマンドを出したあとに待機する時間を返します�
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Open Browser``
+Open Browser
 -----------------
 
 :Arguments: url, browser=firefox, alias=None, remote_url=False, desired_capabilities=None, ff_profile_dir=None
@@ -1378,7 +1378,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 .. _`Create Dictionary`: http://robotframework.org/robotframework/latest/libraries/BuiltIn.html#Create%20Dictionary
 
 
-``Open Context Menu``
+Open Context Menu
 ----------------------
 
 :Arguments: locator
@@ -1386,7 +1386,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 ``locator`` で指定したエレメントのコンテキストメニューを開きます。
 
 
-``Page Should Contain``
+Page Should Contain
 ------------------------
 
 :Arguments: text, loglevel=INFO
@@ -1397,7 +1397,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 ログレベルに ``NONE`` または現在のログレベルより低いレベルを指定すると、ページソースをログに出力しません。
 
 
-``Page Should Contain Button``
+Page Should Contain Button
 -------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1409,7 +1409,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Contain Checkbox``
+Page Should Contain Checkbox
 ---------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1420,7 +1420,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Contain Element``
+Page Should Contain Element
 --------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1432,7 +1432,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Contain Image``
+Page Should Contain Image
 ------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1443,7 +1443,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Contain Link``
+Page Should Contain Link
 -----------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1454,7 +1454,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Contain List``
+Page Should Contain List
 -----------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1465,7 +1465,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Contain Radio Button``
+Page Should Contain Radio Button
 -------------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1476,7 +1476,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Contain Textfield``
+Page Should Contain Textfield
 ----------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1487,7 +1487,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Not Contain``
+Page Should Not Contain
 ----------------------------
 
 :Arguments: text, loglevel=INFO
@@ -1496,7 +1496,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 ``loglevel`` の説明は `Page Should Contain`_ を参照してください。
 
 
-``Page Should Not Contain Button``
+Page Should Not Contain Button
 -----------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1507,7 +1507,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 キー属性は id, name and value です。 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Not Contain Checkbox``
+Page Should Not Contain Checkbox
 -------------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1517,7 +1517,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 キー属性は ``id`` と ``name`` です。. エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Not Contain Element``
+Page Should Not Contain Element
 ------------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1528,7 +1528,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Not Contain Image``
+Page Should Not Contain Image
 ----------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1538,7 +1538,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 キー属性は ``id``, ``src``, ``alt`` です。 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Not Contain Link``
+Page Should Not Contain Link
 ---------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1549,7 +1549,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Not Contain List``
+Page Should Not Contain List
 ---------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1559,7 +1559,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 キー属性は ``id`` と ``name`` です。. エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Not Contain Radio Button``
+Page Should Not Contain Radio Button
 -----------------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1570,7 +1570,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Page Should Not Contain Textfield``
+Page Should Not Contain Textfield
 --------------------------------------
 
 :Arguments: locator, message=, loglevel=INFO
@@ -1581,7 +1581,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Press Key``
+Press Key
 --------------
 
 :Arguments: locator, key
@@ -1599,7 +1599,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
   Press Key  login_button  \\13
 
 
-``Radio Button Should Be Set To``
+Radio Button Should Be Set To
 ----------------------------------
 
 :Arguments: group_name, value
@@ -1609,7 +1609,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 ラジオボタンの指定方法は `Select Radio Button`_ を参照してください。
 
 
-``Radio Button Should Not Be Selected``
+Radio Button Should Not Be Selected
 ----------------------------------------
 
 :Arguments: group_name
@@ -1618,7 +1618,7 @@ IE ブラウザが一つしか起動していないときだけ、 `Switch Brows
 ラジオボタンの指定方法は `Select Radio Button`_ を参照してください。
 
 
-``Register Keyword To Run On Failure``
+Register Keyword To Run On Failure
 ---------------------------------------
 
 :Arguments: keyword
@@ -1646,13 +1646,13 @@ run-on-failure 機構は、 Python または Jython 2.4 以降でテストを実
 IronPython では使えません。
 
 
-``Reload Page``
+Reload Page
 ----------------
 
 ページのリロード操作をシミュレートします。
 
 
-``Remove Location Strategy``
+Remove Location Strategy
 -----------------------------
 
 :Arguments: strategy_name
@@ -1662,7 +1662,7 @@ IronPython では使えません。
 カスタムのロケーションストラテジの追加は `Add Location Strategy`_ を参照してください。
 
 
-``Select All From List``
+Select All From List
 -------------------------
 
 :Arguments: locator
@@ -1683,7 +1683,7 @@ Select Checkbox
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Select Frame``
+Select Frame
 -----------------
 
 :Arguments: locator
@@ -1693,7 +1693,7 @@ Select Checkbox
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Select From List``
+Select From List
 ---------------------
 
 :Arguments: locator, \*items
@@ -1708,7 +1708,7 @@ Select Checkbox
 リストとコンボボックスのどちらにも使えます。キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Select From List By Index``
+Select From List By Index
 ------------------------------
 
 :Arguments: locator, \*indexes
@@ -1717,7 +1717,7 @@ Select Checkbox
 リストとコンボボックスのどちらにも使えます。キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Select From List By Label``
+Select From List By Label
 ------------------------------
 
 :Arguments: locator, \*labels
@@ -1726,7 +1726,7 @@ Select Checkbox
 リストとコンボボックスのどちらにも使えます。キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Select From List By Value``
+Select From List By Value
 ------------------------------
 
 :Arguments: locator, \*values
@@ -1735,7 +1735,7 @@ Select Checkbox
 リストとコンボボックスのどちらにも使えます。キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Select Radio Button``
+Select Radio Button
 ------------------------
 
 :Arguments: group_name, value
@@ -1759,7 +1759,7 @@ Select Checkbox
   Select Radio Button  size  sizeXL
 
 
-``Select Window``
+Select Window
 ------------------
 
 :Arguments: locator=None
@@ -1806,7 +1806,7 @@ Selenium2Library のアプローチでロケータストラテジを指定して
   Select Window
 
 
-``Set Browser Implicit Wait``
+Set Browser Implicit Wait
 ------------------------------
 
 :Arguments: seconds
@@ -1823,7 +1823,7 @@ Selenium2 の対応する関数の説明には、「エレメントを取得し�
 .. seealso:: `Set Selenium Implicit Wait`_
 
 
-``Set Screenshot Directory``
+Set Screenshot Directory
 -----------------------------
 
 :Arguments: path, persist=False
@@ -1835,7 +1835,7 @@ Selenium2 の対応する関数の説明には、「エレメントを取得し�
 それ以外の場合は、現在のテスト実行スコープが終わった時点で、以前の値に復帰します。
 
 
-``Set Selenium Implicit Wait``
+Set Selenium Implicit Wait
 -------------------------------
 
 :Arguments: seconds
@@ -1852,7 +1852,7 @@ Selenium2 の対応する関数の説明には、「エレメントを取得し�
   Set Selenium Implicit Wait  ${orig wait}
 
 
-``Set Selenium Speed``
+Set Selenium Speed
 -----------------------
 
 :Arguments: seconds
@@ -1869,7 +1869,7 @@ Selenium がコマンドを実行した後に待機する時間を設定しま�
   Set Selenium Speed  .5 seconds
 
 
-``Set Selenium Timeout``
+Set Selenium Timeout
 -------------------------
 
 :Arguments: seconds
@@ -1890,7 +1890,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
   Set Selenium Timeout  ${orig timeout}
 
 
-``Set Window Position``
+Set Window Position
 ------------------------
 
 :Arguments: x, y
@@ -1907,7 +1907,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
   Should Be Equal  ${y}  ${0}
 
 
-``Set Window Size``
+Set Window Size
 --------------------
 
 :Arguments: width, height
@@ -1924,7 +1924,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
   Should Be Equal  ${height}  ${600}
 
 
-``Simulate``
+Simulate
 -------------
 
 :Arguments: locator, event
@@ -1934,7 +1934,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Submit Form``
+Submit Form
 ----------------
 
 :Arguments: locator=None
@@ -1944,7 +1944,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 キー属性は ``id`` と ``name`` です。. エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Switch Browser``
+Switch Browser
 -------------------
 
 :Arguments: index_or_alias
@@ -1976,7 +1976,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
   Switch Browser  ${id}  
 
 
-``Table Cell Should Contain``
+Table Cell Should Contain
 ------------------------------
 
 :Arguments: table_locator, row, column, expected, loglevel=INFO
@@ -1988,7 +1988,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 ``loglevel`` の説明は `Page Should Contain`_ を参照してください。
 
 
-``Table Column Should Contain``
+Table Column Should Contain
 --------------------------------
 
 :Arguments: table_locator, col, expected, loglevel=INFO
@@ -2010,7 +2010,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 ``loglevel`` の説明は `Page Should Contain Element`_ を参照してください。
 
 
-``Table Footer Should Contain``
+Table Footer Should Contain
 --------------------------------
 
 :Arguments: table_locator, expected, loglevel=INFO
@@ -2021,7 +2021,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 ``loglevel`` の説明は `Page Should Contain Element`_ を参照してください。
 
 
-``Table Header Should Contain``
+Table Header Should Contain
 --------------------------------
 
 :Arguments: table_locator, expected, loglevel=INFO
@@ -2031,7 +2031,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 ``loglevel`` の説明は `Page Should Contain Element`_ を参照してください。
 
 
-``Table Row Should Contain``
+Table Row Should Contain
 -----------------------------
 
 :Arguments: table_locator, row, expected, loglevel=INFO
@@ -2045,7 +2045,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 ``loglevel`` の説明は `Page Should Contain Element`_ を参照してください。
 
 
-``Table Should Contain``
+Table Should Contain
 -------------------------
 
 :Arguments: table_locator, expected, loglevel=INFO
@@ -2055,7 +2055,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 ``loglevel`` の説明は `Page Should Contain Element`_ を参照してください。
 
 
-``Textarea Should Contain``
+Textarea Should Contain
 ----------------------------
 
 :Arguments: locator, expected, message=
@@ -2065,7 +2065,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 キー属性は ``id`` と ``name`` です。. エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Textarea Value Should Be``
+Textarea Value Should Be
 -----------------------------
 
 :Arguments: locator, expected, message=
@@ -2075,7 +2075,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 キー属性は ``id`` と ``name`` です。. エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Textfield Should Contain``
+Textfield Should Contain
 -----------------------------
 
 :Arguments: locator, expected, message=
@@ -2085,7 +2085,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 キー属性は ``id`` と ``name`` です。. エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Textfield Value Should Be``
+Textfield Value Should Be
 ------------------------------
 
 :Arguments: locator, expected, message=
@@ -2095,7 +2095,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 キー属性は ``id`` と ``name`` です。. エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Title Should Be``
+Title Should Be
 --------------------
 
 :Arguments: title
@@ -2103,7 +2103,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 現在のページのタイトルが ``title`` と一致するか検証します。
 
 
-``Unselect Checkbox``
+Unselect Checkbox
 ----------------------
 
 :Arguments: locator
@@ -2114,13 +2114,13 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Unselect Frame``
+Unselect Frame
 ------------------- 
 
 トップフレームを現在のフレームにします。
 
 
-``Unselect From List``
+Unselect From List
 -----------------------
 
 :Arguments: locator, \*items
@@ -2132,7 +2132,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 リストとコンボボックスのどちらにも使えます。キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Unselect From List By Index``
+Unselect From List By Index
 --------------------------------
 
 :Arguments: locator, \*indexes
@@ -2141,7 +2141,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 リストとコンボボックスのどちらにも使えます。キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Unselect From List By Label``
+Unselect From List By Label
 ---------------------------------
 
 :Arguments: locator, \*labels
@@ -2150,7 +2150,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 リストとコンボボックスのどちらにも使えます。キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
 
-``Unselect From List By Value``
+Unselect From List By Value
 --------------------------------
 
 :Arguments: locator, \*values
@@ -2158,7 +2158,7 @@ Selenium2Library では、 ``timeout`` を引数にとる ``Wait ...`` 系のキ
 ``locator`` で指定したリストから ``*values`` で指定した値の要素の選択を解除します。
 リストとコンボボックスのどちらにも使えます。キー属性は ``id`` と ``name`` です。エレメントの指定方法は  `エレメントの探索と指定 <locating elements>`_ を参照してください。
 
-``Wait For Condition``
+Wait For Condition
 -----------------------
 
 :Arguments: condition, timeout=None, error=None
@@ -2172,7 +2172,7 @@ JavaScript からウィンドウのコンテンツにアクセスする方法は
 .. seealso:: `Wait Until Page Contains`_, `Wait Until Page Contains Element`_, `Wait For Condition`_, `Wait Until Element Is Visible`_, `Wait Until Keyword Succeeds`_ (Robot Framework 組み込みキーワード)
 
 
-``Wait Until Element Contains``
+Wait Until Element Contains
 --------------------------------
 
 :Arguments: locator, text, timeout=None, error=None
@@ -2186,7 +2186,7 @@ JavaScript からウィンドウのコンテンツにアクセスする方法は
 .. seealso:: `Wait Until Page Contains`_, `Wait Until Page Contains Element`_, `Wait For Condition`_, `Wait Until Element Is Visible`_, `Wait Until Keyword Succeeds`_ (Robot Framework 組み込みキーワード)
 
 
-``Wait Until Element Does Not Contain``
+Wait Until Element Does Not Contain
 ----------------------------------------
 
 :Arguments: locator, text, timeout=None, error=None
@@ -2199,7 +2199,7 @@ JavaScript からウィンドウのコンテンツにアクセスする方法は
 .. seealso:: `Wait Until Page Contains`_, `Wait Until Page Contains Element`_, `Wait For Condition`_, `Wait Until Element Is Visible`_, `Wait Until Keyword Succeeds`_ (Robot Framework 組み込みキーワード)
 
 
-``Wait Until Element Is Enabled``
+Wait Until Element Is Enabled
 ----------------------------------
 
 :Arguments: locator, timeout=None, error=None
@@ -2212,7 +2212,7 @@ JavaScript からウィンドウのコンテンツにアクセスする方法は
 .. seealso:: `Wait Until Page Contains`_, `Wait Until Page Contains Element`_, `Wait For Condition`_, `Wait Until Element Is Visible`_, `Wait Until Keyword Succeeds`_ (Robot Framework 組み込みキーワード)
 
 
-``Wait Until Element Is Not Visible``
+Wait Until Element Is Not Visible
 --------------------------------------
 
 :Arguments: locator, timeout=None, error=None
@@ -2225,7 +2225,7 @@ JavaScript からウィンドウのコンテンツにアクセスする方法は
 .. seealso:: `Wait Until Page Contains`_, `Wait Until Page Contains Element`_, `Wait For Condition`_, `Wait Until Element Is Visible`_, `Wait Until Keyword Succeeds`_ (Robot Framework 組み込みキーワード)
 
 
-``Wait Until Element Is Visible``
+Wait Until Element Is Visible
 ----------------------------------
 
 :Arguments: locator, timeout=None, error=None
@@ -2238,7 +2238,7 @@ JavaScript からウィンドウのコンテンツにアクセスする方法は
 .. seealso:: `Wait Until Page Contains`_, `Wait Until Page Contains Element`_, `Wait For Condition`_, `Wait Until Element Is Visible`_, `Wait Until Keyword Succeeds`_ (Robot Framework 組み込みキーワード)
 
 
-``Wait Until Page Contains``
+Wait Until Page Contains
 -----------------------------
 
 :Arguments: text, timeout=None, error=None
@@ -2251,7 +2251,7 @@ JavaScript からウィンドウのコンテンツにアクセスする方法は
 .. seealso:: `Wait Until Page Contains Element`_, `Wait For Condition`_, `Wait Until Element Is Visible`_, `Wait Until Keyword Succeeds`_ (Robot Framework 組み込みキーワード)
 
 
-``Wait Until Page Contains Element``
+Wait Until Page Contains Element
 -------------------------------------
 
 :Arguments: locator, timeout=None, error=None
@@ -2264,7 +2264,7 @@ JavaScript からウィンドウのコンテンツにアクセスする方法は
 .. seealso:: `Wait Until Page Contains`_, `Wait For Condition`_, `Wait Until Element Is Visible`_, `Wait Until Keyword Succeeds`_ (Robot Framework 組み込みキーワード)
 
 
-``Wait Until Page Does Not Contain``
+Wait Until Page Does Not Contain
 -------------------------------------
 
 :Arguments: text, timeout=None, error=None
@@ -2278,7 +2278,7 @@ JavaScript からウィンドウのコンテンツにアクセスする方法は
 
 
 
-``Wait Until Page Does Not Contain Element``
+Wait Until Page Does Not Contain Element
 ---------------------------------------------
 
 :Arguments: locator, timeout=None, error=None
@@ -2291,7 +2291,7 @@ JavaScript からウィンドウのコンテンツにアクセスする方法は
 .. seealso:: `Wait Until Page Contains`_, `Wait For Condition`_, `Wait Until Element Is Visible`_, `Wait Until Keyword Succeeds`_ (Robot Framework 組み込みキーワード)
 
 
-``Xpath Should Match X Times``
+Xpath Should Match X Times
 -------------------------------
 
 :Arguments: xpath, expected_xpath_count, message=, loglevel=INFO
