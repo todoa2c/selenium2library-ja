@@ -133,7 +133,7 @@ Selenium2Library バージョン 1.7 から、ロケータの代わりに WebEle
 
 定義したロケータを使うには、 `Add Location Strategy`_ を使います。
 
-.. code::
+.. code:: robotframework
 
   Add Location Strategy  custom  Custom Locator Strategy
 
@@ -600,7 +600,7 @@ Confirm Action
 
 例:
 
-.. code::
+.. code:: robotframework
 
   # 確認ダイアログを表示する
   Click Button  Send
@@ -729,7 +729,7 @@ Drag And Drop By Offset
 
 例:
 
-.. code::
+.. code:: robotframework
 
   # myElem を 50px 右, 35px 下に動かす
   Drag And Drop By Offset  myElem  50  -35
